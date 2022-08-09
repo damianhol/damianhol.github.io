@@ -33,6 +33,7 @@ function start(event) {
     is_drawing = true;
     context.beginPath();
     context.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+    event.preventDefault();
 }
 
 function draw(event) {
